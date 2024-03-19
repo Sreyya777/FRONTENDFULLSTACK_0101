@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biodata</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: blue;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+        }
+  
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+       
+    
+
+    .animated-image {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        animation: slide 3s infinite; /* Adjust timing as needed */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bio Data</h1>
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            Reddy Sreya
+        </marquee>
+    </header>
+    
+    <section>
+        <h2>About Me</h2>
+        <p>I'm an enthusiast Web Developer</p>
+        <img src="images.jpg" alt="Description of the image" class="animated-image" style="float: right;" width="450" height="400">
+        <p>To visit my LinkedIn Profile, click <a href="https://www.linkedin.com/in/sreya-reddy-2b1a42252/" target="_blank">here</a>.</p>
+        
+         
+        
+    </section>
+    <section>
+        <h2>Personal Information</h2>
+        <ul>
+            <li>Student at Presidency University </li>
+            <li>Computer Science Engineer</li>
+            <li>Banglore</li>
+            
+        </ul>
+    </section>
+    <section>
+
+    </section>
+        <h2>Contact : 12345678</h2>
+        
+    <footer>
+        <p>&copy; 2024 My Biodata. All rights reserved.</p>
+        <a href="#">Profile</a>
+        <a href="#">Social Media</a>
+    </footer>
+</body>
+</html>
