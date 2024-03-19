@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: skyblue;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: white;
+      border-radius: 6px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h2 {
+      margin-top: 30px;
+    }
+    .menu-select {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .menu-select label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .menu-select select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Book Your Table</h1>
+    <form action="thank_you.html" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="datetime">Date & Time:</label>
+      <input type="datetime-local" id="datetime" name="datetime" required>
+
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1" required>
+
+      <label for="special_requests">Special Requests:</label>
+      <textarea id="special_requests" name="special_requests" placeholder="Any special requests?"></textarea>
+
+      <h2>Menu Selection</h2>
+
+      <div class="menu-select">
+        <label for="appetizers">Appetizers:</label>
+        <select id="appetizers" name="appetizers">
+          <option value="">Select an appetizer</option>
+          <option value="appetizer1">Naachos</option>
+          <option value="appetizer2">Diet Coke</option>
+       
+        </select>
+      </div>
+
+      <div class="menu-select">
+        <label for="main-courses">Main Courses:</label>
+        <select id="main-courses" name="main-courses">
+          <option value="">Select a main course</option>
+          <option value="main-course1">North Indian</option>
+          <option value="main-course2">South Indian</option>
+          
+        </select>
+      </div>
+
+      <div class="menu-select">
+        <label for="desserts">Desserts:</label>
+        <select id="desserts" name="desserts">
+          <option value="">Select a dessert</option>
+          <option value="dessert1">Chocolate Fudge</option>
+          <option value="dessert2">Belgium Chips</option>
+          
+        </select>
+      </div>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+</body>
+</html>
+
+ 
+
