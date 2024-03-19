@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Square Series Generator</title>
+</head>
+<body>
+
+<h2>Square Series Generator</h2>
+
+<label for="numberInput">Enter a number:</label>
+<input type="number" id="numberInput" min="1" step="1">
+<button onclick="generateSquareSeries()">Generate Series</button>
+
+<div id="output"></div>
+
+<script>
+function generateSquareSeries() {
+    var number = parseInt(document.getElementById('numberInput').value);
+    var outputDiv = document.getElementById('output');
+    outputDiv.innerHTML = ''; // Clear previous content
+
+    if (!isNaN(number)) {
+        for (var i = 1; i <= number; i++) {
+            var square = i * i;
+            outputDiv.innerHTML += i + "^2 = " + square + "<br>";
+        }
+    } else {
+        outputDiv.innerHTML = 'Please enter a valid number.';
+    }
+}
+</script>
+
+</body>
+</html>
