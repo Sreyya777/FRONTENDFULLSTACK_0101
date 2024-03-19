@@ -1,0 +1,66 @@
+
+Reddy Sreya <sreya6449@gmail.com>
+Mon, Mar 18, 1:58 PM (16 hours ago)
+to Sri
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Grid</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    
+    .img-container {
+      overflow: hidden;
+    }
+    .img-container img {
+      transition: transform 0.3s ease;
+    }
+    .img-container:hover img {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="img-container">
+        <img src="img1.jpg" class="img-fluid" alt="Image 1">
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="img-container">
+        <img src="img2.jpg" class="img-fluid" alt="Image 2">
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="img-container">
+        <img src="img3.jpg" class="img-fluid" alt="Image 3">
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="img-container">
+        <img src="img4.jpg" class="img-fluid" alt="Image 4">
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="img-container">
+        <img src="img5.jpg" class="img-fluid" alt="Image 5">
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="img-container">
+        <img src="img6.jpg" class="img-fluid" alt="Image 6">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
